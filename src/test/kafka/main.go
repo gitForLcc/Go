@@ -18,4 +18,16 @@ func main() {
 		return
 	}
 	defer producer.Close()
+
+	msg := &sarama.ProducerMessage{}
+	msg.Topic = "nginx_log"
+	msg.Value = sarama.StringEncoder("this is a good Test")
+
+	pid, offset, err := producer.SendMessage(msg)
+	if err != nil {
+		fmt.Println("send message failed, err: ", err)
+		return
+	}
+
+	fmt.Printf("pid: %v, offset: %v\n", pid, offset)
 }
