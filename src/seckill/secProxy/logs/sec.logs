@@ -1,0 +1,6 @@
+2019/09/15 22:48:40.472 [E] [init.go:89]  ping redis failed, err: dial tcp 192.168.1.4:6379: connectex: No connection could be made because the target machine actively refused it.
+2019/09/15 22:48:40.472 [E] [main.go:15]  init redis failed, err: dial tcp 192.168.1.4:6379: connectex: No connection could be made because the target machine actively refused it.
+2019/09/15 22:49:50.982 [I] [main.go:15]  init sec succ
+2019/09/15 22:49:51.021 [I] [asm_amd64.s:1357]  http server Running on http://0.0.0.0:9091
+2019/09/15 22:51:52.226 [I] [main.go:15]  init sec succ
+2019/09/15 22:51:52.265 [I] [asm_amd64.s:1357]  http server Running on http://0.0.0.0:9091
